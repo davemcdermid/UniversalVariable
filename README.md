@@ -172,6 +172,7 @@ There are many possible types of product on the Web - here, we first list proper
 <tr><td>Product Name</td><td>name</td><td>String</td><td>Name of the product.</td></tr>
 <tr><td>Product Description</td><td>description</td><td>String</td><td>Brief description of the product.</td></tr>
 <tr><td>Product Manufacturer</td><td>manufacturer</td><td>String</td><td>Name of the manufacturer for this product.</td></tr>
+<tr><td>Product Category ID</td><td>category_id</td><td>String</td><td>An ID that represents the category this product belongs to.</td></tr>
 <tr><td>Product Category</td><td>category</td><td>String</td><td>A short description of this type of product, e.g. 'shoes', 'package holiday'.</td></tr>
 <tr><td>Product Subcategory</td><td>subcategory</td><td>String</td><td>A short description of this type of product, with more granularity than the category, e.g. 'trainers'. <br>Use only if a category has been defined.</td></tr>
 <tr><td>Product Linked Products</td><td>linked_products</td><td>Array of <a href="#product">Product</a> objects</td><td>Products related to this one through well-defined relationships (e.g. a product in the same range from the same manufacturer), not generated based on the output of recommendation algorithms.</td></tr>
@@ -222,6 +223,7 @@ See the following example of a populated Product object:
 	"name": "XYZShoes",
 	"description": "most popular shoes in our shop",
 	"manufacturer": "Acme Corp",
+	"category_id": "2"
 	"category": "Shoe",
 	"subcategory": "Trainers",
 	"linked_products": [Product, Product, Product, ...],
